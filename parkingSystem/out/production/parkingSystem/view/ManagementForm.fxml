@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="844.0" prefWidth="1222.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1122.0" layoutX="70.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/parking-lot.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cbxSelectTable" layoutX="68.0" layoutY="81.0" onAction="#cbxOnAction" prefHeight="50.0" prefWidth="319.0" />
+      <Button layoutX="477.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnAddVehicleOnAction" prefHeight="50.0" prefWidth="171.0" text="Add Vehicle">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="723.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnAddDriverOnAction" prefHeight="50.0" prefWidth="171.0" text="Add Driver">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="anchorPane1" layoutX="68.0" layoutY="217.0" prefHeight="600.0" prefWidth="1075.0" />
+      <Button layoutX="477.0" layoutY="153.0" mnemonicParsing="false" onAction="#vehicleDetailsOnAction" prefHeight="50.0" prefWidth="171.0" text="Vehicle Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="723.0" layoutY="153.0" mnemonicParsing="false" onAction="#driverDetailsOnAction" prefHeight="50.0" prefWidth="171.0" text="Driver Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="963.0" layoutY="81.0" mnemonicParsing="false" onAction="#goHomeOnAction" prefHeight="50.0" prefWidth="171.0" style="-fx-background-radius: 50; -fx-background-color: #f9ca24;" text="Go To Home" textFill="#0d0000">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

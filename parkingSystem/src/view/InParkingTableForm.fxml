@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingTableFormController">
+   <children>
+      <TableView fx:id="tblInParking" prefHeight="601.0" prefWidth="1076.0">
+        <columns>
+          <TableColumn fx:id="colVNumber" prefWidth="211.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVType" prefWidth="337.0" text="Vehicle Type" />
+            <TableColumn fx:id="colPSlot" prefWidth="194.0" text="Parking Slot" />
+            <TableColumn fx:id="colPTime" prefWidth="333.0" text="Parked TIme" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
